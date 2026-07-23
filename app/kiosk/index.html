@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" style="background: #03060d">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#020305" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta
+      name="description"
+      content="Real-time live sales display for Shopify stores"
+    />
+    <title>Live Sales Display</title>
+    <script>
+      // Lock the initial compact kiosk layout. Entering fullscreen makes
+      // the viewport taller, but must not rearrange a layout the operator
+      // has already approved in browser mode.
+      if (innerHeight <= 680 || innerWidth / innerHeight >= 2) {
+        document.documentElement.dataset.kioskLayout = "compact";
+      }
+
+      // Apply transparent mode before first paint. App.tsx repeats this
+      // after hydration, but doing it here prevents a dark first frame.
+      if (new URLSearchParams(location.search).get("bg") === "transparent") {
+        document.documentElement.dataset.bg = "transparent";
+        document.documentElement.style.background = "transparent";
+        document.documentElement.style.colorScheme = "light";
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CP12knrW.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Bh1tDfsg.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DWziM2jN.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

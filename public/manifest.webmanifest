@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "Live Sales Display",
+  "short_name": "Live Sales",
+  "description": "Real-time live sales display for Shopify stores",
+  "start_url": "/?bg=transparent&renderer=svg&source=pwa",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#020305",
+  "theme_color": "#020305",
+  "icons": [
+    {
+      "src": "/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

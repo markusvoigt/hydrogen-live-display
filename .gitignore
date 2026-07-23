@@ -1,0 +1,13 @@
+node_modules
+/.DS_Store
+/.cache
+/build
+/dist
+/public/build
+/.mf
+.env
+.shopify
+.react-router
+.cursor
+tsconfig.tsbuildinfo
+.DS_Store

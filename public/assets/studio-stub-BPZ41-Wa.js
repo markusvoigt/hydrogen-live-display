@@ -1,0 +1,1 @@
+var e={initialize:()=>{},extend:()=>{},createContentOfSaveFile:()=>({}),ui:{isHidden:!0},__experimental:{__experimental_clearPersistentStorage:async()=>{}}};export{e as default};
